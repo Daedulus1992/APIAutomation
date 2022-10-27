@@ -1,4 +1,4 @@
-package CucumberExample.Automation;
+package Automation;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -21,5 +21,10 @@ public class stepDefinition {
     @And("^Cards are displayed$")
     public void cards_are_displayed(){
         System.out.println("cards are displayed");
+    }
+    @When("User login with {string} and {string}")
+    public void user_login_with_and(String string, String string2) {
+        // Write code here that turns the phrase above into concrete actions
+        System.out.println(string +" "+ string2);
     }
 }
